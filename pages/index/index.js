@@ -12,7 +12,6 @@ Component({
 
   },
   attached: function () {
-    console.log('首页');
     this.getCurCity();
   },
   /**
