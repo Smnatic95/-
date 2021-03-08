@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "gItem": "/component/order/gInfo/ginfo",
+    "orderInfo": "/component/order/info",
+    "shAddress_card": "/component/Logistics/shAddress/card",
+    "logistic_item": "/component/Logistics/logItem/logItem"
+  },
+  "navigationBarTitleText": "订单详情"
+}

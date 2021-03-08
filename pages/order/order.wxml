@@ -1,0 +1,36 @@
+<!--pages/order/order.wxml-->
+<!--顶部切换-->
+<view class="nav">
+  <view class="type {{index==curTabindex?'sel':''}}" wx:for="{{status_orders}}" wx:key="index" data-index="{{index}}"
+    bindtap="tabClick">
+    {{item.name}}
+  </view>
+</view>
+<!--订单列表-->
+<swiper class="orders_swiper" current="{{curTabindex}}" duration="{{swiperDuration}}" bindchange="swiperChange"
+  bindanimationfinish="onSwipeFinish">
+  <swiper-item wx:for="{{status_orders}}" wx:key="index">
+    <!--暂无订单-->
+    <view wx:if="{{status_orders[index].orders&&status_orders[index].orders.length==0}}" class="noOrder">
+      <image mode="widthFix" src="/static/order/noOrder.jpg"></image>
+    </view>
+    <scroll-view wx:elif="{{status_orders[index].orders.length>0}}" class="orders" scroll-y="{{true}}"
+      enhanced="{{true}}" paging-enabled="{{true}}" show-scrollbar="{{false}}">
+      <!--订单-->
+      <navigator url="/pages/order/detail/detail" class="order" wx:for="{{status_orders[index].orders}}" hover-class="none">
+        <info></info>
+        <view class="funcs">
+          <navigator catchtap="handelTap" class="func" url="/pages/heXiao/code/index" wx:if="{{item.statusCode==2}}" hover-class="none">
+            查看券码
+          </navigator>
+          <navigator catchtap="handelTap" class="func" url="/pages/Logistics/detail/detail" hover-class="none">
+            查看物流
+          </navigator>
+          <navigator catchtap="handelTap" class="func light" url="/pages/order/comment/upload" hover-class="none">
+            评价
+          </navigator>
+        </view>
+      </navigator>
+    </scroll-view>
+  </swiper-item>
+</swiper>

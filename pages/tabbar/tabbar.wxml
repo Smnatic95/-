@@ -1,0 +1,6 @@
+<!--pages/tabbar.wxml-->
+<view class="page_tabbar">
+  <index wx:if="{{tabbar.selectedIndex == 0}}" id="index"></index>
+  <my wx:if="{{tabbar.selectedIndex == 2}}"></my>
+</view>
+<custom_tabbar tabbar="{{tabbar}}" bind:tabChange="tabChange"></custom_tabbar>

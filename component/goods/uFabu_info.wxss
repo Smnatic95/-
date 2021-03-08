@@ -1,0 +1,48 @@
+/* component/goods/uFabu_info.wxss */
+.box_info {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 25rpx 15rpx;
+  display: flex;
+}
+
+.box_info .thumb {
+  flex-shrink: 0;
+  width: 25%;
+  border-radius: 30rpx;
+}
+
+.box_info .pull_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+}
+
+.box_info .pull_right .title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box_info .pull_right .top .price {
+  margin-top: 15rpx;
+}
+
+
+.box_info .pull_right .saw {
+  color: gray;
+  font-size: 28rpx;
+}
+
+.box_info .pull_right .price{
+  color: var(--themeColor);
+}
+
+.box_info .pull_right .price .iconfont{
+     font-size: 27rpx;
+}

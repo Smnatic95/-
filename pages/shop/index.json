@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "custom_tabbar": "/component/tabbar/custom-tabbar"
+  },
+  "navigationBarTitleText": "店铺首页"
+}

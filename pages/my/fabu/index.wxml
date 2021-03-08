@@ -1,0 +1,23 @@
+<!--pages/my/fabu.wxml-->
+<view class="gList">
+  <navigator class="gitem" url="/pages/goods/release/index" hover-class="none">
+    <gInfo>浏览3 . 留言0</gInfo>
+    <view class="funcs">
+      <view class="func">降价</view>
+      <view class="func">编辑</view>
+      <view class="func moreOpe" catchtap="moreOpe">
+      <view class="iconfont moreDotsFont"></view>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="gitem" url="/pages/goods/release/index" hover-class="none">
+    <gInfo>浏览3 . 留言0</gInfo>
+    <view class="funcs">
+      <view class="func">降价</view>
+      <view class="func">编辑</view>
+      <view class="func moreOpe" catchtap="moreOpe">
+      <view class="iconfont moreDotsFont"></view>
+      </view>
+    </view>
+  </navigator>
+</view>

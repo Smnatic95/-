@@ -1,0 +1,42 @@
+/* component/Logistics/logItem/logItem.wxss */
+.logItem{
+  display: flex;
+}
+
+.logItem .pull_left{
+  width:10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logItem .pull_left .circleAS{
+  width: 4rpx;
+  height: 100%;
+  background-color: #ccc;
+  position: relative;
+}
+
+.logItem .pull_left .circleAS::before{
+  content:'';
+  display: inline-block;
+  background-color: #FA4906;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  box-shadow: 2rpx 2rpx 10rpx var(--themeColor);
+}
+
+.detail{
+  width: calc(100% - 10vw);
+  line-height: 35rpx;
+}
+
+.date{
+  color: gray;
+  font-size: 23rpx;
+  margin-top: 5rpx;
+}

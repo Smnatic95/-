@@ -1,0 +1,34 @@
+/* component/section_bar.wxss */
+.section_bar {
+  color: var(--themeColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cicle {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  background:linear-gradient(to right bottom, var(--themeColor), #B26B4F) ;
+  position: relative;
+}
+
+.section_bar .pull_left,.section_bar .pull_right{
+    display: flex;
+    align-items: center;
+}
+
+.heng {
+  width: 40rpx;
+  height: 3rpx;
+  background-color: gray;
+}
+
+.section_bar .pull_left {
+  margin-right: 20rpx;
+}
+
+.section_bar .pull_right {
+  margin-left: 20rpx;
+}

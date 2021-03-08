@@ -1,0 +1,85 @@
+<!--pages/goods/release/release.wxml-->
+<form bindsubmit="release">
+  <view class="header">
+    <view class="cancel" bindtap="back1">
+      取消
+    </view>
+    <button class="release" form-type="submit">发布</button>
+  </view>
+  <textarea name="Introduction" id="Introduction" cols="30" rows="6" placeholder="说说你的使用感受，入手渠道，转手原因..."></textarea>
+  <view class="upload_imgs">
+    <view class="upload_img_box" wx:if="{{imgTempFilePaths&&imgTempFilePaths.length}}" wx:for="{{imgTempFilePaths}}"
+      wx:key="index">
+      <image data-index="{{index}}" bindtap="previewUpImgs" mode="widthFix" src="{{item}}"></image>
+    </view>
+    <view class="chooseImg" bindtap="chooseImg">
+      +
+    </view>
+  </view>
+  <view class="location">
+    <text class="iconfont locationFont"></text> <text>发货地: 郑州 金水区</text>
+  </view>
+  <!--分类-->
+  <view class="box_cateGory">
+    <view class="bar" bindtap="cateGoryClick">
+      <view class="pull_left">
+        <text class="iconfont cateGoryFont"></text>
+        <text class="toa">分类/品牌/材质/等</text>
+      </view>
+      <view class="iconfont arrowUpFont {{show_panel_type?'down':''}}"></view>
+    </view>
+    <!--选择规格-->
+    <view class="panel_type {{show_panel_type?'':'none'}}">
+      <view class="type">
+        <view class="name">
+          分类
+        </view>
+        <view class="tags">
+          <view class="tag selected">
+            耳环
+          </view>
+          <view class="tag">
+            蓝牙耳机
+          </view>
+          <view class="tag">
+            耳钉
+          </view>
+          <view class="tag">
+            太阳镜
+          </view>
+        </view>
+      </view>
+      <view class="type">
+        <view class="name">
+          成色
+        </view>
+        <view class="tags">
+          <view class="tag">
+            全新
+          </view>
+          <view class="tag">
+            几乎全新
+          </view>
+          <view class="tag">
+            轻微使用痕迹
+          </view>
+          <view class="tag selected">
+            明显划痕
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--价格-->
+  <view class="box_price">
+    <view class="pull_left">
+      <view class="iconfont rmbFont"></view>
+      <view class="title">价格</view>
+    </view>
+    <view class="pull_right">
+      <text class="iconfont rmbFont"></text>
+      <text class="amount">15.00 </text>
+      <text class="iconfont arrowRightFont"></text>
+    </view>
+  </view>
+</form>

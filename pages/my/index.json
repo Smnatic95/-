@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "custom_tabbar": "../../component/tabbar/custom-tabbar",
+    "section_bar": "../../component/section_bar/section_bar",
+    "goods_card": "../../component/goods/card/index"
+  }
+}

@@ -1,0 +1,19 @@
+/* component/bar_title/bar_title.wxss */
+.bar_title {
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bolder;
+  padding-bottom: 30rpx;
+  position: relative;
+  letter-spacing: 6rpx;
+}
+
+.bar_title::after {
+  content: '\e605';
+  font-size: 16rpx;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#EEDD1B;
+}

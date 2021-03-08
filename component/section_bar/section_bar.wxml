@@ -1,0 +1,14 @@
+<!--component/section_bar.wxml-->
+<view class="section_bar">
+  <view class="pull_left">
+    <view class="heng"></view>
+    <view class="cicle"></view>
+  </view>
+  <view class="name">
+    <slot></slot>
+  </view>
+  <view class="pull_right">
+    <view class="cicle"></view>
+    <view class="heng"></view>
+  </view>
+</view>

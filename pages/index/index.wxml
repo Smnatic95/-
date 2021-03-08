@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="container_index">
+  <view class="header">
+    <!--顶部-->
+    <view class="nav">
+      <!--位置-->
+      <navigator class="address" url="/pages/address/chooseCity/chooseCity">
+        {{curCityName}} <text class="iconfont arrowDownFont"></text>
+      </navigator>
+      <!--切换城市-->
+      <view class="curC_switch" wx:if="{{showSwitchCity}}">
+        <view class="toa">
+          定位显示你在"{{cityName_location}}"
+        </view>
+        <view class="btn" bindtap="switchCity">
+          切换到"{{cityName_location}}"
+        </view>
+      </view>
+      <!--搜索框-->
+      <view class="search_box">
+        <text class="iconfont"></text>
+        <input type="text" placeholder="请输入商家名，品类或商圈" placeholder-class="placeholder" />
+      </view>
+      <!--排序方式-->
+      <view class="sort">
+        <view class="curSort" bindtap="sortType_click">
+          <!--当前排序方式-->
+          {{curSort_type}} <view class="iconfont arrowDownFont {{show_sortTypes&&show_mask_transparent?'up':''}}"></view>
+        </view>
+        <!--排序方式-->
+        <view class="sort_types" wx:if="{{show_sortTypes&&show_mask_transparent}}">
+          <view class="sort_type" wx:for="{{sort_types}}" data-index="{{index}}" bindtap="chsSortType" wx:key="index">
+            {{item}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--菜单-->
+    <view class="funcs">
+      <navigator class="func" url="/pages/message/index" hover-class="none">
+        <text class="iconfont messageIconfont"></text>
+        <view class="name">信息</view>
+      </navigator>
+      <navigator class="func" url="/pages/moneyBag/index" hover-class="none">
+        <text class="iconfont moneyBagFont"></text>
+        <view class="name">钱包</view>
+      </navigator>
+      <navigator class="func" url="/pages/order/order?status=2" hover-class="none">
+        <text class="iconfont qrCodeFont"></text>
+        <view class="name">核销码</view>
+      </navigator>
+      <view class="func" bindtap="scanCode">
+        <text class="iconfont scanCodeFont"></text>
+        <view class="name">扫一扫</view>
+      </view>
+    </view>
+  </view>
+  <!--商品区-->
+  <view class="goods-card-list">
+    <view class="pull_left">
+      <view class="card">
+        <swiper circular="{{true}}" interval="{{3000}}" autoplay="{{true}}" class="goods_swiper" indicator-dots="true"
+          indicator-active-color="#E73B12" indicator-color="#DE9C82">
+          <swiper-item>
+            <image class="img" mode="scaleToFill" src="../../static/swipe/g1.jpg"></image>
+          </swiper-item>
+          <swiper-item>
+            <image class="img" mode="scaleToFill" src="../../static/goods/g1.jpg"></image>
+          </swiper-item>
+          <swiper-item>
+            <image class="img" mode="scaleToFill" src="../../static/swipe/g1.jpg"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="card">
+        <goods_card></goods_card>
+      </view>
+    </view>
+    <view class="pull_right">
+      <view class="card">
+        <goods_card></goods_card>
+      </view>
+    </view>
+  </view>
+</view>
+<!--透明遮罩-->
+<view class="mask_transparent" wx:if="{{show_mask_transparent}}" bindtouchstart="ts_mask_transparent"></view>

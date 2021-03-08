@@ -1,0 +1,14 @@
+<!--component/Logistics/logItem/logItem.wxml-->
+<view class="logItem">
+  <view class="pull_left">
+    <view class="circleAS"></view>
+  </view>
+  <view class="pull_right">
+    <view class="detail">
+      本次订单包裹已经被签收，感谢您的选购，祝您生活愉快
+    </view>
+    <view class="date">
+      2021-04-04 12:00:00
+    </view>
+  </view>
+</view>

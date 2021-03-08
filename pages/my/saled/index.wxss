@@ -1,0 +1,86 @@
+/* pages/my/saled.wxss */
+page {
+  background-color: #F7F8F9;
+}
+
+.money_z {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin: 20rpx auto;
+  padding:30rpx 20rpx;
+}
+
+.money_z .toa{
+  font-size: 26rpx;
+}
+
+.money_z .toShare{
+  padding: 8rpx 23rpx;
+  font-size: 28rpx;
+  border: 1px solid #555;
+}
+
+.gList {
+  background-color: #fff;
+}
+
+.gitem {
+  padding-bottom: 15rpx;
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+
+.gitem:last-of-type {
+  border: none;
+}
+
+.gitem .funcs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gitem .funcs .pull_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactBuyer {
+  display: flex;
+  align-items: center;
+}
+
+
+.contactBuyer .iconfont {
+  margin-right: 8rpx;
+}
+
+.contactBuyer .iconfont::before {
+  content: '\e6bd';
+  font-size: 50rpx;
+}
+
+.gitem .funcs .func {
+  padding: 0 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 1px solid #eee;
+  margin: 0 10rpx;
+  border-radius: 50rpx;
+  font-weight: 500;
+}
+
+.gitem .funcs .func.moreOpe {
+  padding: 0;
+  width: 70rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.gitem .funcs .func.moreOpe .iconfont{
+  font-size: 40rpx;
+}

@@ -1,0 +1,18 @@
+<view class="bar">
+  <view class="shop">
+    <image mode="scaleToFill" class="logo" src="https://gw.alicdn.com//38/3f/T1q5RzXaFBXXb1upjX.jpg_10000x170q90s150.jpg_.webp">
+    </image>
+    <view class="name">
+      人保险官方旗舰店
+    </view>
+    <view class="iconfont arrowRightFont"></view>
+  </view>
+  <view class="status">
+    等待卖家付款
+  </view>
+</view>
+<gItem></gItem>
+<gItem></gItem>
+<view class="price_intro">
+  共2件商品 合计: <text class="price iconfont rmbFont">8.63</text>
+</view>

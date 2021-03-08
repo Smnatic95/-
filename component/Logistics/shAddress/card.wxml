@@ -1,0 +1,17 @@
+<!--component/shAddress/card.wxml-->
+<view class="card">
+  <view class="toa">
+    收货地址
+  </view>
+  <view class="uInfo">
+    <view class="name">
+      小王
+    </view>
+    <view class="mobileNumber">
+      137********9
+    </view>
+  </view>
+  <view class="address">
+    北京市东城区东城路街道阳光路一号
+  </view>
+</view>

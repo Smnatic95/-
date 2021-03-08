@@ -1,0 +1,25 @@
+<!--pages/heXiao/code/index.wxml-->
+<view class="panel_code">
+  <view class="title">
+    核销码
+  </view>
+  <view class="mainCnt">
+    <view class="topBar">
+      <view class="pull_left">
+        <image class="avator"
+          src="https://thirdwx.qlogo.cn/mmopen/vi_32/1rcM4KfMAuibFLTYiahGw8hNNgvLRv2QegMItlmIVNtgha1NBbS5cMLicqtBBt6Pux3gQ1UibmTZ2awDLfj4NzYWNw/132">
+        </image>
+        <view class="name">
+          起码运动馆(皇姑店)
+        </view>
+      </view>
+      <view class="iconfont arrowRightFont"></view>
+    </view>
+    <view class="box_img_code">
+      <image mode="widthFix" src="/static/heXiao/qrCode.png"></image>
+    </view>
+    <view class="nb_code">
+      170000000000160110
+    </view>
+  </view>
+</view>

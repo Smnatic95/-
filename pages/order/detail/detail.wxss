@@ -1,0 +1,258 @@
+/* pages/order/detail/detail.wxss */
+page {
+  background-color: #F7F4F8;
+  min-height: 100vh;
+}
+
+.schedule_bar {
+  display: flex;
+  padding: 15rpx 0;
+}
+
+.schedule_bar>.schedule {
+  width: 20vw;
+  font-size: 28rpx;
+  flex-shrink: 0;
+}
+
+.schedule_bar>.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule_bar>.schedule .iconfont {
+  position: relative;
+  background-color: var(--themeColor);
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 2rpx 2rpx 10rpx var(--themeColor);
+  margin-bottom: 15rpx;
+  color: #fff;
+}
+
+.schedule_bar>.schedule .iconfont::before {
+  font-size: 24rpx;
+}
+
+.schedule_bar>.schedule .iconfont::after {
+  content: '';
+  display: inline-block;
+  height: 4rpx;
+  width: calc(20vw - 60rpx);
+  background-color: var(--themeColor);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(10rpx, -50%);
+}
+
+.schedule_bar>.schedule .iconfont.last::after {
+  width: calc(20vw - 50rpx);
+  /* background-color  : #ccc; */
+}
+
+.schedule_bar>.schedule .quan {
+  position: relative;
+  width: 20rpx;
+  height: 40rpx;
+  margin-bottom: 15rpx;
+}
+
+.schedule_bar>.schedule .quan::before {
+  content: '';
+  display: inline-block;
+  height: 20rpx;
+  width: 20rpx;
+  background-color: var(--themeColor);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.schedule_bar>.schedule .quan::after {
+  content: '';
+  display: inline-block;
+  height: 4rpx;
+  width: calc(20vw - 36rpx);
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(10rpx, -50%);
+}
+
+.schedule_bar>.schedule:last-of-type .iconfont::after,
+.schedule_bar>.schedule:last-of-type .quan::after {
+  content: none
+}
+
+.schedule.done .toa {
+  font-weight: 500;
+}
+
+.schedule.noDone .toa {
+  color: #555
+}
+
+.gInfo {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10rpx 30rpx 20rpx;
+  background-color: white;
+  font-size: 26rpx;
+  margin-top: 15rpx;
+}
+
+
+.goods_info {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 15rpx 20rpx;
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+
+.card_logistics {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10rpx 30rpx 20rpx;
+  background-color: white;
+  font-size: 26rpx;
+  margin-top: 15rpx;
+}
+
+.card_logistics .toa {
+  font-weight: 600;
+  padding-bottom: 25rpx;
+}
+
+.latestLog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latestLog .arrowRightFont {
+  color: gray;
+}
+
+.container {
+  padding-bottom: 100rpx;
+}
+
+.footer_menu {
+  width: 100vw;
+  height: 100rpx;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+
+.footer_menu .moreOp {
+  color: gray;
+  font-size: 28rpx;
+}
+
+.footer_menu .pull_right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer_menu .btn {
+  padding: 8rpx 20rpx;
+  border: 1px solid black;
+  margin: 0 10rpx;
+  font-size: 26rpx;
+  border-radius: 30rpx;
+}
+
+.footer_menu .btn:last-of-type {
+  margin: 0;
+}
+
+.footer_menu .btn.act {
+  color: var(--themeColor);
+  border: 1px solid var(--themeColor);
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  color: #444;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.shop .logo {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 12rpx;
+}
+
+.shop .name {
+  font-size: 28rpx;
+}
+
+.shop .arrowRightFont {
+  color: #ccc;
+  margin-left: 10rpx;
+  font-size: 40rpx;
+}
+
+.price_intro {
+  color: #444;
+  text-align: right;
+  font-size: 26rpx;
+}
+
+.price_intro .price {
+  font-size: 30rpx;
+}
+
+.info_order {
+  margin-top: 15rpx;
+  background-color: #fff;
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+}
+
+.info_order .info_list>view {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+
+.info_order .info_list>view .pull_right {
+  min-width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_order .info_list>view .pull_right .copy {
+  color: var(--themeColor);
+}
+
+.info_order .toa {
+  font-size: 28rpx;
+  padding-bottom: 20rpx;
+}

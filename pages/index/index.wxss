@@ -1,0 +1,187 @@
+/**index.wxss**/
+.goods-card-list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx 15rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.funcs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30rpx;
+}
+
+.func {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.func .iconfont {
+  font-size: 80rpx;
+}
+
+.header {
+  background-color: var(--themeColor);
+}
+
+.nav {
+  width: 95vw;
+  height: 70rpx;
+  margin: 0 auto;
+  padding-bottom: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 29rpx;
+  position: relative;
+}
+
+.nav .arrowDownFont {
+  font-weight: bold;
+  transition: all .2s;
+}
+
+.nav .arrowDownFont.up{
+  transform: rotate(-180deg);
+}
+
+.nav .placeholder {
+  color: gray;
+  font-size: 28rpx;
+}
+
+.nav .search_box .iconfont::before {
+  content: '\e661';
+  margin-right: 15rpx;
+  color: gray;
+  font-size: 29rpx;
+}
+
+.curC_switch {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-20rpx);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 20rpx;
+  font-size: 27rpx;
+}
+
+.curC_switch::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 15rpx solid transparent;
+  border-bottom: 15rpx solid rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50rpx, -100%);
+}
+
+.curC_switch .btn {
+  background-color: #0A74EC;
+  padding: 0 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 15rpx;
+}
+
+.nav .search_box {
+  background-color: #F9F8ED;
+  padding: 10rpx 15rpx;
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.nav .sort {
+  position: relative;
+  z-index: 2;
+  width: 23%;
+  text-align: right;
+}
+
+.nav .sort .curSort{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav .sort .sort_types {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200rpx;
+  transform: translateY(20rpx);
+  background-color: black;
+  z-index: 9999;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.nav .sort .sort_types::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  transform: translate(0, -100%);
+  border: 12rpx solid transparent;
+  border-bottom: 12rpx solid black;
+}
+
+.nav .sort .sort_types>.sort_type {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 26rpx;
+}
+
+.nav .sort .sort_types>.sort_type::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleY(.2);
+}
+
+.nav .sort .sort_types>.sort_type:last-of-type::after {
+  content: none;
+}
+
+.goods_swiper {
+  width: 340rpx;
+  height: 500rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.goods_swiper .img {
+  width: 340rpx;
+  height: 500rpx;
+}
+
+.card {
+  margin-top: 20rpx;
+}

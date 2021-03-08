@@ -1,0 +1,29 @@
+<!--pages/message/index.wxml-->
+<view class="message_list">
+  <view class="message_item" wx:for="{{message_list}}" wx:key="index">
+    <movable-area>
+      <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}" inertia="true"
+        data-messageIndex="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd"
+        bindchange="handleMovableChange">
+        <view class="box_message" bindtap="toDetail" data-xmove="{{item.xmove}}">
+          <image class="icon" mode="scaleToFill" src="{{item.icon}}"></image>
+          <view class="info">
+            <view class="name">
+              {{item.name}}
+            </view>
+            <view class="title">
+              {{item.title}}
+            </view>
+          </view>
+          <view class="time">
+            {{item.time}}
+          </view>
+        </view>
+        <view class="toast" wx:if="{{index==0&&item.xmove!=0&&isToast}}">
+      左滑可删除消息
+    </view>
+      </movable-view>
+    </movable-area>
+    <view class="del" data-index="{{index}}" bindtap="delMsg">删除</view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/address/chooseCity/chooseCity.wxml-->
+<view class="all_City_list">
+  <view id="{{'word'+item.initials}}" wx:for="{{word_citys}}" wx:key="index">
+    <view class="curWord">
+      {{item.initials}}
+    </view>
+    <view class="city_item" wx:for="{{item.citys}}" wx:for-item="city" wx:key="index">
+      <navigator open-type="reLaunch" url="/pages/tabbar/tabbar?chsCity={{city.name}}">{{city.name}}</navigator>
+    </view>
+  </view>
+</view>
+<view class="showChsWord {{showChsWordClass}}">{{goCitysId}}</view>
+<!--单词索引-->
+<view class="word_list">
+  <view wx:for="{{word_list}}" data-word="{{item}}" bind:tap="wordClick" wx:key="index">{{item}}</view>
+</view>

@@ -1,0 +1,6 @@
+/* pages/tabbar.wxss */
+.page_tabbar{
+  background-color: #F4F2F5;
+  min-height: calc(100vh - 105rpx);
+  padding-bottom: 105rpx;
+}

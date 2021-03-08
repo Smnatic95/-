@@ -1,0 +1,17 @@
+<!--component/order/gInfo/ginfo.wxml-->
+<view class="box">
+  <view class="ginfo">
+    <image class="thumb" mode="widthFix"
+      src="https://img.alicdn.com/imgextra/i3/725677994/O1CN013pqYxw28vIlxQGzrN_!!725677994.jpg_430x430q90.jpg"></image>
+    <view class="detail">
+      <view class="name">
+        Starbucks/星巴克星选芝士奶香拿铁即饮咖啡饮料整箱装270ml*15瓶
+      </view>
+      <view class="reMark">圆750(竹勺*1)</view>
+    </view>
+  </view>
+  <view class="pull_right">
+    <view class="price iconfont rmbFont">8.63</view>
+    <view class="count">x1</view>
+  </view>
+</view>

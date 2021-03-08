@@ -1,0 +1,59 @@
+/* pages/address/chooseCity/chooseCity.wxss */
+.word_list {
+  position: fixed;
+  bottom: 20rpx;
+  right: 15rpx;
+  font-size: 24rpx;
+  max-height: 100vh;
+  overflow: auto
+}
+
+.word_list>view {
+  padding-bottom: 5rpx
+}
+
+.all_City_list {
+  width: 100vw;
+  background-color: white
+}
+
+.all_City_list .curWord {
+  background-color: #ddd;
+  color: #333;
+  padding-left: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx
+}
+
+.all_City_list .city_item {
+  margin-left: 20rpx;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #eee;
+  font-size: 26rpx
+}
+
+.showChsWord{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 100rpx;
+  color: gray;
+  z-index: 2;
+  opacity: 0
+}
+
+@keyframes fadeOut{
+  0%{
+    opacity: 1
+  }
+  100%{
+    opacity: 0
+  }
+}
+
+.showChsWord.fadeOut{
+   animation-name: fadeOut;
+   animation-duration: 2s;
+   animation-fill-mode: forwards
+}

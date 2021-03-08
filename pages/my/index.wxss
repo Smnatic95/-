@@ -1,0 +1,195 @@
+.self_info {
+  background-color: var(--themeColor);
+  display: flex;
+  align-items: center;
+  padding-bottom: 100rpx;
+  padding-left: 40rpx;
+}
+
+.self_info .avator .img {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+.self_info .pull_right {
+  margin-left: 30rpx;
+}
+
+.self_info .pull_right .account_name {
+  font-size: 38rpx;
+  font-weight: 600;
+  text-shadow: 0.03em 0.0276em 0.005em #F7E287
+}
+
+.self_info .pull_right .account_manage {
+  font-size: 26rpx;
+  margin-top: 15rpx;
+  padding: 8rpx;
+  border-radius: 12rpx;
+  border: 1px solid black;
+  display: inline-block;
+  text-shadow: 0.08em 0.04em 0.005em #F7E287
+}
+
+.account_manage::after {
+  content: '\e603';
+  font-weight: 600;
+  margin-left: -10rpx;
+}
+
+.services {
+  width: 93vw;
+  margin: 0 auto;
+  margin-top: -80rpx;
+}
+
+.services .service_section {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  padding: 20rpx 25rpx;
+}
+
+.services .service_section .toa {
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.self_order {
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.types_order {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+
+.types_order .type_order {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.types_order .type_order .name {
+  font-size: 26rpx;
+}
+
+.types_order .type_order .iconfont {
+  font-size: 50rpx;
+}
+
+.types_order .type_order .icon .img{
+   width: 80rpx;
+   height: 80rpx;
+}
+
+.money_bag {
+  margin-top: 15rpx;
+}
+
+.money_bag .toa {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.money_bag .toa .intro {
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.money_bag .toa .to_detail {
+  font-size: 28rpx;
+  color: black;
+  font-weight: normal;
+}
+
+.money_bag .toa .to_detail::after {
+  content: '\e603';
+  font-size: 26rpx;
+  color: gray;
+}
+
+.money_bag .types_money {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+}
+
+.money_bag .types_money .type_money {
+  width: 23%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.money_bag .types_money .type_money .info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.money_bag .types_money .type_money .info .count {
+  font-size: 50rpx;
+  font-weight: 600;
+}
+
+.money_bag .types_money .type_money .info .unit {
+  font-size: 22rpx;
+  margin-left: 7rpx;
+  margin-bottom: 8rpx;
+}
+
+.money_bag .types_money .type_money .name {
+  margin-top: 15rpx;
+  font-size: 26rpx;
+}
+
+.services_other {
+  margin-top: 15rpx;
+}
+
+.services_other .list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+
+.services_other .list>.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services_other .list>.item .icon .img {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.services_other .list>.item .name {
+  font-size: 22rpx;
+  margin-top: 3rpx;
+}
+
+.goods_recommend .bar {
+  padding: 40rpx 0 10rpx 0;
+}
+
+.goods_recommend .goods {
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 15rpx;
+}
+
+.goods_recommend .goods .good{
+  margin-top: 30rpx;
+}
+

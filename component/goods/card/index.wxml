@@ -1,0 +1,40 @@
+<!--component/goods/card/index.wxml-->
+<view class="goods_card" data-goodsId="1" bindtap="toGoodsDetail">
+  <view class="thumb">
+    <image mode="widthFix" class="img"
+      src="https://img.alicdn.com/bao/uploaded/i4/2453339138/O1CN01x62OCA2HNFlVof4ZF_!!0-item_pic.jpg_468x468q75.jpg_.webp">
+    </image>
+  </view>
+  <view class="goods_intro">
+    <view class="goods_name">
+      寒冬已逝，春意渐暖,时代大城踏春而来,南城门户，工程铁军来筑梦
+    </view>
+    <view class="shop_info">
+      <view class=shop_logo">
+        <image class="img" mode="widthFix" src="https://gw.alicdn.com//38/3f/T1q5RzXaFBXXb1upjX.jpg_10000x170q90s150.jpg_.webp">
+        </image>
+      </view>
+      <view class="shop_name">
+        司农星有才的画卷
+      </view>
+    </view>
+    <view class="shop_option">
+      评分80 | 到店核销 | 1.3KM
+    </view>
+    <view class="price_info">
+      <view class="price">
+        <text class="now iconfont rmbFont">5.69</text>
+        <text class="origen iconfont rmbFont">15</text>
+      </view>
+      <view class="discount">
+        3.7折
+      </view>
+    </view>
+    <view class="SnapUp_info">
+      <view class="iconfont clockFont"></view>
+      <view class="time">
+        00天09:06:03结束
+      </view>
+    </view>
+  </view>
+</view>

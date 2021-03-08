@@ -1,0 +1,41 @@
+<!--pages/my/saled.wxml-->
+<view class="money_z">
+  <view class="toa">
+    在XXX共赚了999.99元
+  </view>
+  <view class="toShare">
+    去炫耀
+  </view>
+</view>
+<view class="gList">
+  <navigator class="gitem" url="/pages/order/detail/detail" hover-class="none">
+    <gInfo>交易成功</gInfo>
+    <view class="funcs">
+      <view class="contactBuyer">
+        <text class="iconfont"></text>
+        <text>联系买家</text>
+      </view>
+      <view class="pull_right">
+        <view class="func">查看钱款</view>
+        <view class="func moreOpe" catchtap="moreOpe">
+          <view class="iconfont moreDotsFont"></view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="gitem" url="/pages/order/detail/detail" hover-class="none">
+    <gInfo>待发货</gInfo>
+    <view class="funcs">
+      <view class="contactBuyer">
+        <text class="iconfont"></text>
+        <text>联系买家</text>
+      </view>
+      <view class="pull_right">
+        <view class="func">发货</view>
+        <view class="func moreOpe" catchtap="moreOpe">
+          <view class="iconfont moreDotsFont"></view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</view>

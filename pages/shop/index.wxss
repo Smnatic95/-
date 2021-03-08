@@ -1,0 +1,76 @@
+/* pages/shop/index.wxss */
+page {
+  background-color: #eee;
+}
+
+.top_section {
+  background-color: #fff;
+}
+
+.container {
+  padding: 0 20rpx;
+}
+
+.search_box {
+  margin-top: 15rpx;
+  background-color: #fff;
+  padding: 10rpx 15rpx;
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 26rpx;
+}
+
+.search_box .iconfont {
+  width: 10%;
+}
+
+.search_box input {
+  width: 90%;
+}
+
+.search_box .iconfont::before {
+  content: '\e661';
+  color: black;
+  font-size: 32rpx;
+}
+
+.shop_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0 30rpx;
+}
+
+.shop_info .pull_left .name {
+  font-weight: 600;
+}
+
+.shop_info .pull_left .wula {
+  margin-top: 20rpx;
+  color: gray;
+  font-size: 20rpx;
+}
+
+.shop_info .pull_left .name .arrowRightFont {
+  font-size: 18rpx;
+  border: 1px solid black;
+  padding: 2rpx;
+  border-radius: 50%;
+  margin-left: 10rpx;
+}
+
+.shop_info .pull_left .wula .iconfont {
+  color: var(--themeColor);
+}
+
+.shop_info .subscribe {
+  border: 1rpx solid var(--themeColor);
+  color: var(--themeColor);
+  padding: 8rpx 20rpx;
+  font-size: 26rpx;
+  border-radius: 30rpx;
+}

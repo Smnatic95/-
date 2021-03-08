@@ -1,0 +1,112 @@
+/* pages/heXiao/code/index.wxss */
+page {
+  background-color: #eee;
+}
+
+.panel_code {
+  background-color: #fff;
+  width: 75vw;
+  margin: 150rpx auto 0;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+
+.panel_code .mainCnt {
+  padding: 0 30rpx;
+}
+
+.panel_code .title {
+  background-color: var(--themeColor);
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  letter-spacing: 5rpx;
+}
+
+.topBar {
+  width: 100%;
+  margin: 0 auto;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  border-bottom: 5rpx dashed #ccc;
+  position: relative;
+}
+
+.topBar::before,
+.topBar::after 
+,.nb_code::before
+,.nb_code::after{
+  content: '';
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background-color: #eee;
+  position: absolute;
+}
+
+.topBar::before {
+  bottom: 0;
+  left: -20rpx;
+  transform: translate(-100%, 50%);
+}
+
+.topBar::after {
+  bottom: 0;
+  right: -20rpx;
+  transform: translate(100%, 50%);
+}
+
+.nb_code::before{
+  top: 0;
+  left: -20rpx;
+  transform: translate(-100%, -50%);
+}
+
+.nb_code::after{
+  top: 0;
+  right: -20rpx;
+  transform: translate(100%,-50%);
+}
+
+.topBar .pull_left {
+  display: flex;
+  align-items: center;
+}
+
+.topBar .pull_left .avator {
+  width: 65rpx;
+  height: 65rpx;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+
+.topBar .arrowRightFont {
+  color: gray;
+  font-size: 40rpx;
+}
+
+.box_img_code {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50rpx 0;
+}
+
+.box_img_code image {
+  width: 100%;
+}
+
+.nb_code{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: #444;
+  border-top: 5rpx dashed #ccc;
+  position: relative;
+  letter-spacing: 2rpx;
+}

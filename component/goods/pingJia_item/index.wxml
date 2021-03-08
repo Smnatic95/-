@@ -1,0 +1,22 @@
+<!--component/goods/pingJia_item/index.wxml-->
+<view class="pj">
+        <view class="info_created">
+          <view class="avator">
+            <image class="img" mode="scaleToFill"
+              src="https://thirdwx.qlogo.cn/mmopen/vi_32/1rcM4KfMAuibFLTYiahGw8hNNgvLRv2QegMItlmIVNtgha1NBbS5cMLicqtBBt6Pux3gQ1UibmTZ2awDLfj4NzYWNw/132">
+            </image>
+          </view>
+          <view class="pull_right">
+            <view class="name">
+              马**熊
+            </view>
+            <view class="date_add">
+              2022.02.02
+            </view>
+            <!--评价内容-->
+            <view class="cnt">
+              温一下再喝，味道更好！和超市里的一样很好喝！
+            </view>
+          </view>
+        </view>
+      </view>

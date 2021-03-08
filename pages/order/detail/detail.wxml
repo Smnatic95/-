@@ -1,0 +1,93 @@
+<!--pages/order/detail/detail.wxml-->
+<view class="container">
+  <view class="schedule_bar">
+    <view class="schedule {{index<orderStatus?'done':'noDone'}}" wx:for="{{scheduleList}}" wx:key="index">
+      <view class="iconfont duiHaoFont {{index==orderStatus-1?'last':''}}" wx:if="{{index<orderStatus}}"></view>
+      <view class="quan" wx:else></view>
+      <view class="toa">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <view class="detail">
+    <!--收货地址-->
+    <shAddress_card></shAddress_card>
+    <!--物流信息-->
+    <navigator url="/pages/Logistics/detail/detail" class="card_logistics">
+      <view class="toa">
+        物流信息
+      </view>
+      <view class="latestLog">
+        <logistic_item></logistic_item>
+        <view class="iconfont arrowRightFont"></view>
+      </view>
+    </navigator>
+    <!--商品信息-->
+    <view class="goods_info">
+      <view class="shop">
+        <image mode="scaleToFill" class="logo"
+          src="https://gw.alicdn.com//38/3f/T1q5RzXaFBXXb1upjX.jpg_10000x170q90s150.jpg_.webp">
+        </image>
+        <view class="name">
+          人保险官方旗舰店
+        </view>
+        <view class="iconfont arrowRightFont"></view>
+      </view>
+      <gItem></gItem>
+      <gItem></gItem>
+      <!--价格信息-->
+      <view class="price_intro">
+        共2件商品 合计: <text class="price iconfont rmbFont">8.63</text>
+      </view>
+    </view>
+    <!--订单信息-->
+    <view class="info_order">
+      <view class="toa">
+        订单信息
+      </view>
+      <view class="info_list">
+        <view>
+          <view class="title">
+            订单编号:
+          </view>
+          <view class="pull_right">
+            <view class="detail">
+              561564215641524852358
+            </view>
+            <view class="copy">复制</view>
+          </view>
+        </view>
+        <view>
+          <view class="title">
+            创建时间:
+          </view>
+          <view class="detail">
+            2020-09-01 12:00:00
+          </view>
+        </view>
+        <view>
+          <view class="title">
+            付款时间:
+          </view>
+          <view class="detail">
+            2020-09-01 12:00:00
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--底部菜单-->
+<view class="footer_menu">
+  <view class="pull_left">
+    <view class="moreOp">更多操作</view>
+  </view>
+  <view class="pull_right">
+    <view class="btn">
+      退款
+    </view>
+    <view class="btn act">
+      确认收货
+    </view>
+  </view>
+</view>

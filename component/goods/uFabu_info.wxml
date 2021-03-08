@@ -1,0 +1,18 @@
+<!--component/goods/uFabu_info.wxml-->
+<view class="box_info">
+  <image class="thumb" mode="widthFix"
+    src="https://img.alicdn.com/imgextra/i3/725677994/O1CN013pqYxw28vIlxQGzrN_!!725677994.jpg_430x430q90.jpg"></image>
+  <view class="pull_right">
+    <view class="top">
+      <view class="title">
+        Starbucks/星巴克星选芝士奶香拿铁即饮咖啡饮料整箱装270ml*15瓶
+      </view>
+      <view class="price">
+        <text class="iconfont rmbFont"></text><text>139.5</text>
+      </view>
+    </view>
+    <view class="saw">
+      <slot></slot>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+/* component/goods/pingJia_item/index.wxss */
+
+.pj .info_created {
+  display: flex;
+}
+
+.pj .info_created .avator .img {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.pj .info_created .pull_right {
+  margin-left: 10rpx;
+}
+
+.pj .info_created .pull_right .name {
+  font-weight: 600;
+}
+
+.pj .info_created .pull_right .date_add {
+  color: gray;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+
+.pj .cnt {
+  color: gray;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}

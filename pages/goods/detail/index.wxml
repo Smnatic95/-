@@ -1,0 +1,215 @@
+<!--pages/goods/goods_detail/goods_detail.wxml-->
+<view class="page_goodsDetail">
+  <!--返回按钮-->
+  <view class="myBackBtn" bindtap="back1">
+    <view class="iconfont arrowLeftFont"></view>
+  </view>
+  <!--商品图-->
+  <view class="goods_imgs_box" a:if="{{goodsImgs&&goodsImgs.length}}">
+    <swiper class="goodsImg_swiper" style="height:{{swiperHeight}}px" bindchange="bindSwiperchange">
+      <swiper-item wx:for="{{goodsImgs}}" wx:key="index">
+        <image data-index="{{index}}" bindtap="previewSwiperImg" mode="widthFix" src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+    <!--角标-->
+    <view class="tag">
+      <view class="text"><text class="current">{{swiperIndex+1}}</text> /<text class="total">{{goodsImgs.length}}</text>
+      </view>
+    </view>
+  </view>
+  <!--商品信息-->
+  <view class="goods_info_bar">
+    <view class="lightning_bg">
+      <image src='/static/goods/lightning.jpg' mode="scaleToFill"></image>
+    </view>
+    <view class="content">
+      <view class="pull_left">
+        <view class="top">
+          <view class="pull_left">
+            <text class="price_now iconfont">0.99</text><text class="guiGe"> /份</text>
+          </view>
+          <view class="kuCun">库存10份</view>
+        </view>
+        <view class="bottom">
+          <text class="price_origen iconfont">5</text>
+        </view>
+      </view>
+      <view class="pull_right">
+        <view class="box_ms_time">
+          <view class="title">
+            距秒杀结束
+          </view>
+          <view class="detail_time">
+            <view class="dan_time">
+              10
+            </view>
+            <view class="danWei day">
+              天
+            </view>
+            <view class="dan_time">
+              10
+            </view>
+            <view class="danWei">
+              :
+            </view>
+            <view class="dan_time">
+              37
+            </view>
+            <view class="danWei">
+              :
+            </view>
+            <view class="dan_time">
+              35
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--标题-->
+  <view class="title_bar">
+    <view class="title">
+      Starbucks/星巴克星选芝士奶270ml*15瓶
+    </view>
+    <view class="share_btn">
+      <view class="iconfont shareFont"></view>
+      <view class="cnt">分享</view>
+    </view>
+  </view>
+  <!--平台保障-->
+  <view class="detail_section baoZhang">
+    <view class="pull_left">
+      <view class="title">
+        平台保障
+      </view>
+    </view>
+    <view class="pull_right">
+      <view class="info">
+        闪电退款 . 坏了包退
+      </view>
+      <view class="iconfont arrowRightFont"></view>
+    </view>
+  </view>
+  <!--卖家信息-->
+  <view class="detail_section">
+    <bar_title>卖家信息</bar_title>
+    <view class="shopInfos">
+      <view class="pull_left">
+        <view>
+          <view class="logo">
+            <image mode="scaleToFill"
+              src="https://gw.alicdn.com//38/3f/T1q5RzXaFBXXb1upjX.jpg_10000x170q90s150.jpg_.webp"></image>
+          </view>
+          <view class="name">
+            双流店
+          </view>
+        </view>
+        <view class="info_item time_open">
+          <view class="title">
+            营业时间:
+          </view>
+          <view class="detail">
+            00：00-23:59
+          </view>
+        </view>
+        <view class="info_item time_open">
+          <view class="title">
+            商家电话:
+          </view>
+          <view class="detail">
+            165656218745
+          </view>
+        </view>
+        <view class="address">
+          北京市 东城区 朝阳路 从路街 15，-16号
+        </view>
+      </view>
+      <view class="pull_right fucs">
+        <view>
+          进入
+        </view>
+        <view>
+          拨打
+        </view>
+        <view>
+          导航
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--用户评价-->
+  <view class="detail_section pingJia_user">
+    <view class="bar_guild">
+      <view class="box_count_pingJIa">
+        <view class="toa">
+          用户评价
+        </view>
+        <view class="count">
+          (9619)
+        </view>
+      </view>
+      <view class="score">
+        <text>评分 80 </text><text class="iconfont arrowRightFont"></text>
+      </view>
+    </view>
+    <!--评价列表-->
+    <view class="pj_list">
+      <view class="pj_item">
+        <pingJia_item></pingJia_item>
+      </view>
+    </view>
+  </view>
+  <!--购买须知-->
+  <view class="detail_section">
+    <bar_title>购买须知</bar_title>
+    <text></text>
+  </view>
+  <!--商品详情-->
+  <view class="detail_section">
+    <bar_title>商品详情</bar_title>
+  </view>
+  <!--推荐购买-->
+  <view class="detail_section">
+    <bar_title>推荐购买</bar_title>
+  </view>
+  <view class="recomend_goods">
+    <view class="goods_card">
+      <goods_card></goods_card>
+    </view>
+    <view class="goods_card">
+      <goods_card></goods_card>
+    </view>
+    <view class="goods_card">
+      <goods_card></goods_card>
+    </view>
+  </view>
+  <!--底部-->
+  <view class="footer">
+    <navigator class="func shopIndex" url="/pages/shop/index"  hover-class="none">
+      <view class="iconfont shopFont"></view>
+      <view class="toa">首页</view>
+    </navigator>
+    <view class="func Report" bindtap="report">
+      <view class="iconfont heartFont"></view>
+      <view class="toa">举报</view>
+    </view>
+    <navigator url="/pages/goods/release/index" class="func toSale" hover-class="none">
+      <view class="iconfont liuYanFont"></view>
+      <view class="toa">我要卖</view>
+    </navigator>
+    <view class="func buy_direct">
+      <view class="price">
+        <view class="iconfont rmbFont1"></view>
+        <view class="detail">15</view>
+      </view>
+      <view class="toa">直接购买</view>
+    </view>
+    <view class="func buy_toghter">
+      <view class="price">
+        <view class="iconfont rmbFont1"></view>
+        <view class="detail">15</view>
+      </view>
+      <view class="toa">两人助力购买</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+/* pages/my/settings/index.wxss */
+page {
+  background-color: #F5F5F5;
+}
+
+.section_setting {
+  margin: 30rpx 0 0;
+  padding: 0 20rpx;
+}
+
+.settings {
+  background-color: #fff;
+}
+
+.section_setting .title {
+  color: gray;
+  font-size: 28rpx;
+  padding: 30rpx 20rpx;
+}
+
+.section_setting .settings{
+  border-radius: 30rpx;
+}
+
+.settings>.item {
+  padding: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.settings>.item .toa {
+  font-size: 28rpx;
+}
+
+.settings>.item .iconfont {
+  color: gray;
+}
+
+.settings>.item:last-of-type {
+  border: none;
+}
+
+.section_setting .settings>.item .pull_right{
+  display: flex;
+  align-items: center;
+}
+
+.section_setting .settings>.item .pull_right .avator{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.section_setting .settings>.item .pull_right  .iconfont{
+  margin-left: 15rpx;
+}
+
+.section_setting .settings>.item .pull_right .cnt{
+  color: gray;
+  font-size: 26rpx;
+}
+
+.exit_login{
+  width: 90vw;
+  margin: 100rpx auto 0;
+  background-color: var(--themeColor);
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align-last: center;
+}

@@ -1,0 +1,107 @@
+<!--pages/Logistics/detail/detail.wxml-->
+<!--include-points="{{points}}"-->
+<map class="navi_map" markers="{{markers}}" scale="1" longitude="{{longitude}}" latitude="{{latitude}}"  polyline="{{polyline}}" ></map>
+<view class="dh_info">
+  <view class="company">
+    顺丰速运:
+  </view>
+  <view class="dh">
+    SF465235623563262
+  </view>
+  <view class="copy">
+    复制
+  </view>
+</view>
+<view class="logList">
+  <view class="logItem">
+    <view class="pull_left">
+      <view class="circleAS"></view>
+    </view>
+    <view class="pull_right">
+      <view class="detail">
+        本次订单包裹已经被签收，感谢您的选购，祝您生活愉快
+      </view>
+      <view class="date">
+        2021-04-04 12:00:00
+      </view>
+    </view>
+  </view>
+  <view class="logItem">
+    <view class="pull_left">
+      <view class="circleAS"></view>
+    </view>
+    <view class="pull_right">
+      <view class="detail">
+        本次订单包裹已经被签收，感谢您的选购，祝您生活愉快
+      </view>
+      <view class="date">
+        2021-04-04 12:00:00
+      </view>
+    </view>
+  </view>
+  <view class="logItem">
+    <view class="pull_left">
+      <view class="circleAS"></view>
+    </view>
+    <view class="pull_right">
+      <view class="detail">
+        本次订单包裹已经被签收，感谢您的选购，祝您生活愉快
+      </view>
+      <view class="date">
+        2021-04-04 12:00:00
+      </view>
+    </view>
+  </view>
+  <view class="logItem">
+    <view class="pull_left">
+      <view class="circleAS"></view>
+    </view>
+    <view class="pull_right">
+      <view class="detail">
+        本次订单包裹已经被签收
+      </view>
+      <view class="date">
+        2021-04-04 12:00:00
+      </view>
+    </view>
+  </view>
+  <view class="logItem">
+    <view class="pull_left">
+      <view class="circleAS"></view>
+    </view>
+    <view class="pull_right">
+      <view class="detail">
+        本次订单包裹已经被签收
+      </view>
+      <view class="date">
+        2021-04-04 12:00:00
+      </view>
+    </view>
+  </view>
+  <view class="logItem">
+    <view class="pull_left">
+      <view class="circleAS"></view>
+    </view>
+    <view class="pull_right">
+      <view class="detail">
+        本次订单包裹已经被签收
+      </view>
+      <view class="date">
+        2021-04-04 12:00:00
+      </view>
+    </view>
+  </view>
+  <view class="logItem">
+    <view class="pull_left">
+      <view class="circleAS"></view>
+    </view>
+    <view class="pull_right">
+      <view class="detail">
+        本次订单包裹已经被签收
+      </view>
+      <view class="date">
+        2021-04-04 12:00:00
+      </view>
+    </view>
+  </view>
+</view>

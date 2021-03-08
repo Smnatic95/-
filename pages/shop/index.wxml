@@ -1,0 +1,31 @@
+<!--pages/shop/index.wxml-->
+<view class="container top_section">
+  <view class="search_box">
+    <text class="iconfont"></text>
+    <input type="text" placeholder="搜索店内商品" placeholder-class="placeholder" />
+  </view>
+  <view class="shop_info">
+    <view class="pull_left">
+      <view class="name">
+        元素眼镜店 <text class="iconfont arrowRightFont"></text>
+      </view>
+      <view class="wula">
+        <text class="iconfont jiFont"></text>
+        <text class="iconfont jiFont"></text>
+        <text class="iconfont jiFont"></text>
+        745626粉丝数
+      </view>
+    </view>
+    <view class="subscribe">+ 订阅</view>
+  </view>
+</view>
+<view class="index" wx:if="{{tabbar.selectedIndex==0}}">
+  首页
+</view>
+<view class="dynamic" wx:elif="{{tabbar.selectedIndex==1}}">
+  动态
+</view>
+<view class="category" wx:else>
+  宝贝分类
+</view>
+<custom_tabbar tabbar="{{tabbar}}" bind:tabChange="tabChange"></custom_tabbar>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "info": "/component/order/info"
+  },
+  "navigationBarTitleText": "核销订单"
+}

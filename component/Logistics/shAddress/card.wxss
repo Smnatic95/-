@@ -1,0 +1,19 @@
+/* component/shAddress/card.wxss */
+.card{
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10rpx 30rpx 20rpx;
+  background-color: white;
+  font-size: 26rpx;
+}
+
+.toa{
+  font-weight: 600;
+  padding-bottom: 25rpx;
+}
+
+.uInfo{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15rpx;
+}

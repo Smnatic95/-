@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bar_title":"/component/bar_title/bar_title",
+    "goods_card": "/component/goods/card/index",
+    "pingJia_item": "/component/goods/pingJia_item/index"
+  },
+  "navigationStyle":"custom"
+}

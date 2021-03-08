@@ -1,0 +1,86 @@
+<!--pages/order/comment/upload.wxml-->
+<form bindsubmit="release">
+  <view class="container">
+    <view class="header">
+      <view class="cancel">
+        取消
+      </view>
+      <button class="release" form-type="submit">发布</button>
+    </view>
+    <view class="main_cnt">
+      <!--商品信息-->
+      <view class="g_info">
+        <view class="thumb">
+          <image mode="widthFix"
+            src="https://img.alicdn.com/imgextra/i3/725677994/O1CN013pqYxw28vIlxQGzrN_!!725677994.jpg_430x430q90.jpg">
+          </image>
+        </view>
+        <view class="pull_right">
+          <view class="name">
+            Starbucks/星巴克星选芝士奶香拿铁即饮咖啡饮料整箱装270ml*15瓶
+          </view>
+          <view class="specifications">
+            规格:270ml*15入整箱装 内存:256GB+8GB
+          </view>
+        </view>
+      </view>
+      <!--描述相符-->
+      <view class="box_score desc">
+        <view class="toa">
+          描述相符
+        </view>
+        <!--评分-->
+        <view class="score_box">
+          <view class="star" data-type="desc_score" wx:for="{{starArray}}" data-index="{{index}}" wx:key="index"
+            bindtap="starClick">
+            <text class="iconfont starFullFont" wx:if="{{index < desc_score}}"></text>
+            <text class="iconfont starFont" wx:else></text>
+          </view>
+        </view>
+      </view>
+      <textarea name="Introduction" placeholder-class="placeholder iconfont" id="Introduction" cols="30" rows="6"
+        placeholder="从多个角度评价宝贝,可以帮助更多想买的人"></textarea>
+      <view class="upload_imgs">
+        <view class="upload_img_box" wx:if="{{imgTempFilePaths&&imgTempFilePaths.length}}" wx:for="{{imgTempFilePaths}}"
+          wx:key="index">
+          <image data-index="{{index}}" bindtap="previewUpImgs" mode="widthFix" src="{{item}}"></image>
+        </view>
+        <view class="chooseImg" bindtap="chooseImg">
+          +
+        </view>
+      </view>
+    </view>
+    <!--其他评分-->
+    <view class="score_other">
+      <view class="title">
+        老黑旗舰店
+      </view>
+      <view class="box_score">
+        <view class="toa">
+          物流服务
+        </view>
+        <!--评分-->
+        <view class="score_box">
+          <view class="star" data-type="wuliu_score" wx:for="{{starArray}}" data-index="{{index}}" wx:key="index"
+            bindtap="starClick">
+            <text class="iconfont starFullFont" wx:if="{{index < wuliu_score}}"></text>
+            <text class="iconfont starFont" wx:else></text>
+          </view>
+        </view>
+      </view>
+      <view class="box_score">
+        <view class="toa">
+          服务态度
+        </view>
+        <!--评分-->
+        <view class="score_box">
+          <view class="star" data-type="attitude_score" wx:for="{{starArray}}" data-index="{{index}}" wx:key="index"
+            bindtap="starClick">
+            <text class="iconfont starFullFont" wx:if="{{index < attitude_score}}"></text>
+            <text class="iconfont starFont" wx:else></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</form>

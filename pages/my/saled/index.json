@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "gInfo":"/component/goods/uFabu_info"
+  },
+  "navigationBarTitleText": "我卖出的"
+}

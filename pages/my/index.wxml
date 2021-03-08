@@ -1,0 +1,185 @@
+<!--pages/my/my.wxml-->
+<view class="container_my">
+  <!--个人信息-->
+  <view class="self_info">
+    <view class="avator">
+      <image class="img"
+        src="https://thirdwx.qlogo.cn/mmopen/vi_32/1rcM4KfMAuibFLTYiahGw8hNNgvLRv2QegMItlmIVNtgha1NBbS5cMLicqtBBt6Pux3gQ1UibmTZ2awDLfj4NzYWNw/132">
+      </image>
+    </view>
+    <view class="pull_right">
+      <view class="account_name">
+        爱笑的小熊10007
+      </view>
+      <navigator class="account_manage iconfont" url="/pages/my/settings/index" hover-class="none">
+        账号管理
+      </navigator>
+    </view>
+  </view>
+  <view class="services">
+    <!--订单-->
+    <view class="service_section self_order">
+      <view class="toa">
+        我的订单
+      </view>
+      <view class="types_order">
+        <navigator class="type_order" url="/pages/order/order?status=1" hover-class="none">
+          <view class="icon">
+            <image class="img"mode="scaleToFill" src="/static/order/daiFu.jpg"></image>
+          </view>
+          <view class="name">
+            待付款
+          </view>
+        </navigator>
+        <navigator class="type_order" url="/pages/order/order?status=2" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/order/daiHe.jpg"></image>
+          </view>
+          <view class="name">
+            待核销
+          </view>
+        </navigator>
+        <navigator class="type_order" url="/pages/order/order?status=3" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/order/daiPing.jpg"></image>
+          </view>
+          <view class="name">
+            待评价
+          </view>
+        </navigator>
+        <navigator class="type_order" url="/pages/order/order?status=4" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/order/tui.jpg"></image>
+          </view>
+          <view class="name">
+            退款售后
+          </view>
+        </navigator>
+        <navigator class="type_order" url="/pages/order/order?status=0" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/order/all.jpg"></image>
+          </view>
+          <view class="name">
+            全部订单
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <!--钱包-->
+    <view class="service_section money_bag">
+      <view class="toa">
+        <view class="intro">我的钱包</view>
+        <navigator class="to_detail iconfont" url="/pages/moneyBag/index" hover-class="none">
+          进入钱包
+        </navigator>
+      </view>
+      <view class="types_money">
+        <view class="type_money">
+          <view class="info">
+            <view class="count">
+              0.00
+            </view>
+            <view class="unit">元</view>
+          </view>
+          <view class="name">
+            销售额
+          </view>
+        </view>
+        <view class="type_money">
+          <view class="info">
+            <view class="count">
+              0.00
+            </view>
+            <view class="unit">元</view>
+          </view>
+          <view class="name">
+            可提现
+          </view>
+        </view>
+        <view class="type_money">
+          <view class="info">
+            <view class="count">
+              0.00
+            </view>
+            <view class="unit">元</view>
+          </view>
+          <view class="name">
+            已提现
+          </view>
+        </view>
+        <view class="type_money">
+          <view class="info">
+            <view class="count">
+              1
+            </view>
+            <view class="unit">月</view>
+          </view>
+          <view class="name">
+            我的账单
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--其他服务-->
+    <view class="service_section services_other">
+      <view class="toa">
+        其他服务
+      </view>
+      <view class="list">
+        <navigator class="item" url="/pages/my/fabu/index" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/services/fa.jpg">
+            </image>
+          </view>
+          <view class="name">
+            我发布的
+          </view>
+        </navigator>
+        <navigator class="item" url="/pages/my/saled/index" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/services/sale.jpg">
+            </image>
+          </view>
+          <view class="name">
+            我卖出的
+          </view>
+        </navigator>
+        <navigator class="item" url="/pages/my/kefu/index" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/services/kefu.jpg">
+            </image>
+          </view>
+          <view class="name">
+            官方客服
+          </view>
+        </navigator>
+        <navigator class="item" url="/pages/my/rules/index" hover-class="none">
+          <view class="icon">
+            <image class="img" mode="scaleToFill" src="/static/services/rules.jpg">
+            </image>
+          </view>
+          <view class="name">
+            规则中心
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!--精选推荐-->
+  <view class="goods_recommend">
+    <view class="bar">
+      <section_bar>精选推荐</section_bar>
+    </view>
+    <view class="goods">
+      <view class="good">
+        <goods_card></goods_card>
+      </view>
+      <view class="good">
+        <goods_card></goods_card>
+      </view>
+      <view class="good">
+        <goods_card></goods_card>
+      </view>
+    </view>
+  </view>
+</view>

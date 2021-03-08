@@ -1,0 +1,68 @@
+<!--pages/moneyBag/moneyBag.wxml-->
+<view class="header">
+  <view class="title">当前余额</view>
+  <view class="Balance">124.50</view>
+</view>
+<view class="mainCnt">
+  <view class="funcs">
+    <view class="func_buttton">
+      充值
+    </view>
+    <view class="func_buttton">
+      提现
+    </view>
+  </view>
+  <view class="xf_list">
+    <view class="item">
+      <view class="icon">
+        <image mode="scaleToFill" src="/static/money/daiZi.png"></image>
+      </view>
+      <view class="pull_right">
+        <view class="created_info">
+          <view class="type">
+            在线支付
+          </view>
+          <view class="date">
+            2020-06-01
+          </view>
+        </view>
+        <view class="xf_info">
+          <view class="box_amount">
+            <text class="toa">金额: </text>
+            <text class="iconfont rmbFont"></text>
+            <text class="amount">312</text>
+          </view>
+          <view class="res">
+            <view>-200</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="icon">
+        <image mode="scaleToFill" src="/static/money/daiZi.png"></image>
+      </view>
+      <view class="pull_right">
+        <view class="created_info">
+          <view class="type">
+            在线支付
+          </view>
+          <view class="date">
+            2020-06-01
+          </view>
+        </view>
+        <view class="xf_info">
+          <view class="box_amount">
+            <text class="toa">金额: </text>
+            <text class="iconfont rmbFont"></text>
+            <text class="amount">312</text>
+          </view>
+          <view class="res">
+            <view>-200</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

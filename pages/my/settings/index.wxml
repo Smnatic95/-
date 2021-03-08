@@ -1,0 +1,88 @@
+<!--pages/my/settings/index.wxml-->
+<!--基本信息-->
+<view class="section_setting">
+  <view class="title">
+    基本信息
+  </view>
+  <view class="settings">
+    <view class="item">
+      <view class="toa">
+        头像
+      </view>
+      <view class="pull_right">
+        <image class="avator" src="https://thirdwx.qlogo.cn/mmopen/vi_32/1rcM4KfMAuibFLTYiahGw8hNNgvLRv2QegMItlmIVNtgha1NBbS5cMLicqtBBt6Pux3gQ1UibmTZ2awDLfj4NzYWNw/132"></image>
+        <view class="iconfont arrowRightFont"></view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="toa">
+        昵称
+      </view>
+      <view class="pull_right">
+        <view class="cnt">
+          tepchaaa
+        </view>
+        <view class="iconfont arrowRightFont"></view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="toa">
+        性别
+      </view>
+      <view class="pull_right">
+        <view class="cnt">
+          女
+        </view>
+        <view class="iconfont arrowRightFont"></view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="toa">
+        常住
+      </view>
+      <view class="pull_right">
+        <view class="cnt">
+          日本 广岛
+        </view>
+        <view class="iconfont arrowRightFont"></view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="toa">
+        简介
+      </view>
+      <view class="pull_right">
+        <view class="cnt">
+          爱笑
+        </view>
+        <view class="iconfont arrowRightFont"></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="section_setting">
+  <view class="title">
+    其他信息
+  </view>
+  <view class="settings">
+    <view class="item">
+      <view class="toa">
+        收货地址
+      </view>
+      <view class="iconfont arrowRightFont"></view>
+    </view>
+    <view class="item">
+      <view class="toa">
+        隐私
+      </view>
+      <view class="iconfont arrowRightFont"></view>
+    </view>
+    <view class="item">
+      <view class="toa">
+        清除缓存
+      </view>
+      <view class="iconfont arrowRightFont"></view>
+    </view>
+  </view>
+</view>
+<view class="exit_login">退出登录</view>

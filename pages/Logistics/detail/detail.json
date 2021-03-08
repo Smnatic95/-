@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "logistic_item": "/component/Logistics/logItem/logItem"
+  },
+  "navigationBarTitleText": "物流详情"
+}

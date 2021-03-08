@@ -1,0 +1,108 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "商品详情",
+          "pathName": "pages/goods/detail/index",
+          "query": "id=\"1\"",
+          "scene": null
+        },
+        {
+          "name": "选择城市",
+          "pathName": "pages/address/chooseCity/chooseCity",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "钱包",
+          "pathName": "pages/moneyBag/moneyBag",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布商品",
+          "pathName": "pages/goods/release/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单列表",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "信息",
+          "pathName": "pages/message/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我发布的",
+          "pathName": "pages/my/fabu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我卖出的",
+          "pathName": "pages/my/saled",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单详情",
+          "pathName": "pages/order/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "物流详情",
+          "pathName": "pages/Logistics/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布评价",
+          "pathName": "pages/order/comment/upload",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "核销码",
+          "pathName": "pages/heXiao/code/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/tabbar/tabbar",
+          "query": "page=my",
+          "scene": null
+        },
+        {
+          "name": "账号管理",
+          "pathName": "pages/my/settings/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "店铺首页",
+          "pathName": "pages/shop/index",
+          "query": "page=my",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

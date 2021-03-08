@@ -1,0 +1,125 @@
+.goods_card {
+  width: 340rpx;
+  background-color: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  overflow: hidden;
+}
+
+.goods_card .thumb {
+  width: 100%;
+}
+
+.goods_card .thumb .img {
+  width: 100%;
+}
+
+.goods_intro {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8rpx
+}
+
+.goods_intro .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 15rpx;
+  font-weight: 400;
+  font-size: 30rpx;
+  color: #444;
+  line-height: 50rpx;
+}
+
+.shop_info {
+  display: flex;
+}
+
+.shop_info .shop_logo {
+  width: 50rpx;
+  flex-shrink: 0;
+}
+
+.shop_info .shop_logo .img {
+  width: 100%;
+}
+
+.shop_info .shop_name {
+  font-size: 28rpx;
+  color: gray;
+  margin-left: 8rpx;
+}
+
+.shop_option {
+  color: gray;
+  font-size: 22rpx;
+  margin-bottom: 20rpx;
+}
+
+.price_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.price_info .discount {
+  background-color: #FDF4EF;
+  font-size: 28rpx;
+  color: #EE6827;
+  margin-left: 25rpx;
+}
+
+.price_info .price {
+  background: linear-gradient(to right, #FF5E0F, var(--themeColor));
+  padding: 0 5rpx;
+  color: #fff;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  display: flex;
+  position: relative;
+  height: 45rpx;
+}
+
+.price_info .price::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 22rpx solid transparent;
+  border-left: 13rpx solid var(--themeColor);
+  transform: translateX(100%);
+}
+
+.price .now {
+  font-size: 32rpx;
+  align-self: flex-end;
+}
+
+.price .origen {
+  align-self: center;
+  font-size: 22rpx;
+  color: #F4B77C;
+  text-decoration-line: line-through;
+}
+ 
+.price .rmbFont::before {
+  font-size: 22rpx;
+  margin-right: -5rpx;
+}
+
+.SnapUp_info {
+  display: flex;
+  align-items: center;
+}
+
+.SnapUp_info .time {
+  margin-left: 10rpx;
+  color: var(--themeColor);
+}

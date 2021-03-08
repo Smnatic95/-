@@ -1,0 +1,4 @@
+<!--component/bar_title/bar_title.wxml-->
+<view class="iconfont bar_title">
+  <slot></slot>
+</view>
