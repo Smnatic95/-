@@ -12,6 +12,7 @@ Component({
 
   },
   attached: function () {
+    console.log(1111111);
     this.getCurCity();
   },
   /**
