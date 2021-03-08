@@ -12,7 +12,7 @@ Component({
 
   },
   attached: function () {
-    console.log(1111111);
+    console.log('首页');
     this.getCurCity();
   },
   /**
