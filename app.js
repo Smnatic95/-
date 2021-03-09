@@ -1,5 +1,7 @@
 // app.js
 App({
   onLaunch() {},
-  globalData: {}
+  globalData: {
+    "token":""
+  }
 })
