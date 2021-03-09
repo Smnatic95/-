@@ -1,150 +1,152 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "setting": {
-    "urlCheck": false,
-    "es6": true,
-    "enhance": false,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": false,
-    "coverView": true,
-    "nodeModules": false,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": false,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "enableEngineNative": false,
-    "bundle": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-  },
-  "compileType": "miniprogram",
-  "libVersion": "2.15.0",
-  "appid": "wx2c1efa9ef5d2e072",
-  "projectname": "miniprogram-8",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "scripts": {},
-  "isGameTourist": false,
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "name": "商品详情页",
-          "pathName": "pages/goods/goods_detail/goods_detail",
-          "query": "id=\"1\"",
-          "scene": null
-        },
-        {
-          "name": "选择城市",
-          "pathName": "pages/address/chooseCity/chooseCity",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "钱包",
-          "pathName": "pages/moneyBag/moneyBag",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "发布商品",
-          "pathName": "pages/goods/release/release",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "订单列表",
-          "pathName": "pages/order/order",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "信息",
-          "pathName": "pages/message/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "我发布的",
-          "pathName": "pages/my/fabu",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "我卖出的",
-          "pathName": "pages/my/saled",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "订单详情",
-          "pathName": "pages/order/detail/detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "物流详情",
-          "pathName": "pages/Logistics/detail/detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "发布评价",
-          "pathName": "pages/order/comment/upload",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "核销码",
-          "pathName": "pages/heXiao/code/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "个人中心",
-          "pathName": "pages/tabbar/tabbar",
-          "query": "page=my",
-          "scene": null
-        },
-        {
-          "name": "账号管理",
-          "pathName": "pages/my/settings/index",
-          "query": "",
-          "scene": null
-        }
-      ]
-    }
-  }
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"scopeDataCheck": false,
+		"coverView": true,
+		"es6": true,
+		"postcss": true,
+		"compileHotReLoad": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"autoAudits": false,
+		"newFeature": false,
+		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": false,
+		"enhance": false,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"useMultiFrameRuntime": true,
+		"useApiHook": true,
+		"useApiHostProcess": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"enableEngineNative": false,
+		"bundle": false,
+		"userConfirmedBundleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.15.0",
+	"appid": "wx2c1efa9ef5d2e072",
+	"projectname": "miniprogram-8",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"name": "商品详情页",
+					"pathName": "pages/goods/goods_detail/goods_detail",
+					"query": "id=\"1\"",
+					"scene": null
+				},
+				{
+					"name": "选择城市",
+					"pathName": "pages/address/chooseCity/chooseCity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "钱包",
+					"pathName": "pages/moneyBag/moneyBag",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "发布商品",
+					"pathName": "pages/goods/release/release",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "订单列表",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "信息",
+					"pathName": "pages/message/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "我发布的",
+					"pathName": "pages/my/fabu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "我卖出的",
+					"pathName": "pages/my/saled",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "订单详情",
+					"pathName": "pages/order/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "物流详情",
+					"pathName": "pages/Logistics/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "发布评价",
+					"pathName": "pages/order/comment/upload",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "核销码",
+					"pathName": "pages/heXiao/code/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "个人中心",
+					"pathName": "pages/tabbar/tabbar",
+					"query": "page=my",
+					"scene": null
+				},
+				{
+					"name": "账号管理",
+					"pathName": "pages/my/settings/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
 }
