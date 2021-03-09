@@ -2,6 +2,7 @@
 App({
   onLaunch() {},
   globalData: {
-    "token":""
+    token:"",
+    uid:''
   }
 })
